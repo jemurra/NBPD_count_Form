@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Count Form</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body onload="popsites();">
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script type ="text/javascript" src="script.js"></script> 
+
+<center>
+<div id="ulat"></div>
+<div id="ulong"></div>
+
+<legend id="lgd">Count Form</legend>
+Hello <b><div id="uname"></div></b>&nbsp&nbsp&nbsp&nbsp Site: <b><div id="usite"></div></b>
+<table>
+	<tbody>
+		<tr>
+			<td>
+            <i button type="button" id="mbike" name="mbike" class="btn btn-lg btn-primary fa fa-bicycle" onclick="increasec(this.id)"> Male Bike</button>
+            </td>
+			<td>
+            <input id="Cmbike" name="Cmbike" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <input id="Cfbike" name="Cfbike" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <i button type="button" id="fbike" name="fbike" class="btn btn-lg btn-danger fa fa-bicycle" onclick="increasec(this.id)"> Female Bike</button>
+            </td>
+		</tr>
+		<tr>
+			<td>
+            <i button type="button" id="mped" name="mped" class="btn btn-lg btn-primary fa fa-blind" onclick="increasec(this.id)"> Male Ped</button>
+            </td>
+			<td>
+            <input id="Cmped" name="Cmped" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <input id="Cfped" name="Cfped" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <i button type="button" id="fped" name="fped" class="btn btn-lg btn-danger fa fa-blind" onclick="increasec(this.id)"> Female Ped</button>
+            </td>
+		</tr>
+		<tr>
+			<td>
+            <i button type="button" id="mwhlr" name="mwhlr" class="btn btn-lg btn-primary fa fa-wheelchair" onclick="increasec(this.id)"> Male Whlr</button>
+            </td>
+			<td>
+            <input id="Cmwhlr" name="Cmwhlr" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <input id="Cfwhlr" name="Cfwhlr" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <i button type="button" id="fwhlr" name="fwhlr" class="btn btn-lg btn-danger fa fa-wheelchair" onclick="increasec(this.id)"> Female Whlr</button>
+            </td>
+		</tr>
+		<tr>
+			<td>
+            <i button type="button" id="mothr" name="mothr" class="btn btn-lg btn-primary fa fa-male" onclick="increasec(this.id)"> Male Other</button>
+            </td>
+			<td>
+            <input id="Cmothr" name="Cmothr" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <input id="Cfothr" name="Cfothr" type="text" value="0" class="form-control input-md textbx"></input>
+            </td>
+			<td>
+            <i button type="button" id="fothr" name="fothr" class="btn btn-lg btn-danger fa fa-female" onclick="increasec(this.id)"> Female Other</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4">
+			<button id="uexit" class="btn btn-med btn-info" onclick="exitpage();">Finished</button>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="mModal" tabindex="-1">
+    <div class="modal-dialog modal-lg myModal">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                    Login to Your Site!
+                </h4>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                
+                  <div class="form-group">
+                    <label>Name</label>
+                      <input type="text" class="form-control" id="inputname" placeholder="Enter name"/>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="site">Site</label>
+					<select id="sitelist" name="sitelist" class="form-control">
+						<option></option>
+					</select>
+                  </div>
+                  <button class="btn btn-default" onclick="closeModal();">Submit</button>
+                
+                
+            </div>
+            
+            <!-- Modal Footer -->
+        </div>
+    </div>
+</div>
+
+</center>
+</body>
+</html>
