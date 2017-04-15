@@ -1,0 +1,40 @@
+td, table {
+    padding: .5em;
+    text-align: center;
+}
+
+table{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+	background-color: #000000;
+}
+
+.btn-lg{
+    white-space: normal;
+    padding:1em;
+    font-size: 3em;
+}
+
+.textbx{
+    width: 3.5em;
+}
+
+.btn-med{
+    white-space: normal;
+    padding:1em;
+    font-size: 2em;
+}
+
+#uname, #usite{
+	display: inline;
+	font-size:2em;
+	color: white;
+}
+
+.modal-dialog, .modal-title{
+	font-size: 50px;
+}
